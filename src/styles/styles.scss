@@ -1,0 +1,15 @@
+@import 'settings/global';
+
+@import 'bootstrap/scss/bootstrap';
+
+@import 'settings/variables';
+@import 'settings/colors.scss';
+@import 'settings/fonts.scss';
+
+@import 'shares/flexbox';
+@import 'shares/links';
+
+@import 'pages/home/home';
+@import 'pages/info/info';
+
+@import 'components/components';

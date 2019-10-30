@@ -1,0 +1,23 @@
+.sidebar {
+    @include flexbox();
+    @include flexflow(column);
+    @include bg-opacity($white,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: $bd-r-2x;
+
+    &__item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .item-link {
+        display: inline-block;
+    }
+
+    &__link-back-home {
+        display: inline-block;
+        border-top: 1px solid;
+    }
+}
