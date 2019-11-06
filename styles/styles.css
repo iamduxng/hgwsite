@@ -1,6 +1,8 @@
 @import 'settings/global';
 
-@import 'bootstrap/scss/bootstrap';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import 'settings/variables';
 @import 'settings/colors.scss';
@@ -9,7 +11,4 @@
 @import 'shares/flexbox';
 @import 'shares/links';
 
-@import 'pages/home/home';
-@import 'pages/info/info';
-
-@import 'components/components';
+@import 'modules/modules';
