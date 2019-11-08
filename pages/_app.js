@@ -1,7 +1,17 @@
-import App, { Container } from "next/app";
+import App from "next/app";
 import Head from "next/head";
-//import Nav from "../components/Nav";
 import { title } from "./_document";
+import 'styles/styles.css';
+import Navbar from 'modules/Navbar';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faHome,
+  faSearch,
+  faClipboardList
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faHome, faSearch, faClipboardList);
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -22,9 +32,8 @@ export default class MyApp extends App {
         <Head>
           <title>{title}</title>
         </Head>
-        <Container>
-          <Component {...pageProps} router={router} />
-        </Container>
+        <Navbar/>
+        <Component {...pageProps} router={router} />
       </>
     );
   }

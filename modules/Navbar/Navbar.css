@@ -1,4 +1,20 @@
 .navbar {
-  @apply bg-white p-3;
-  @apply flex flex-col flex-wrap flex-
+  @apply fixed left-0 inset-y-0;
+  @apply bg-gray-300 w-64 h-screen p-4;
+  @apply flex flex-col flex-wrap;
+
+  .navbar__item.nav-item {
+    @apply mb-3 cursor-pointer;
+
+    &:hover {
+      @apply font-bold;
+    }
+  }
+
+  .nav-item {
+    &__icon {
+      @apply w-8 inline-block;
+      @apply text-center;
+    }
+  }
 }

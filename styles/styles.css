@@ -1,14 +1,7 @@
-@import 'settings/global';
-
 @import "tailwindcss/base";
+
 @import "tailwindcss/components";
+
+@import '../modules/modules';
+
 @import "tailwindcss/utilities";
-
-@import 'settings/variables';
-@import 'settings/colors.scss';
-@import 'settings/fonts.scss';
-
-@import 'shares/flexbox';
-@import 'shares/links';
-
-@import 'modules/modules';

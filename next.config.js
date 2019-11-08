@@ -2,16 +2,29 @@
 const withOffline = require('next-offline');
 const withCSS = require('@zeit/next-css');
 const withPurgeCss = require('next-purgecss');
-const path = require('path')
+const path = require('path');
 
 const nextConfig = {
   purgeCssEnabled: ({ dev, isServer }) => (dev || isServer),
+  purgeCssPaths: [
+    'pages/**/*',
+    'modules/**/*',
+  ],
   webpack: (config, options) => {
     config.module.rules.push(
       {
         test: /\.css$/,
         exclude: /node_modules/,
         use: ['postcss-loader'],
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 100000
+          }
+        }
       }
     );
     // We push our config into the resolve.modules array

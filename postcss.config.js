@@ -6,7 +6,7 @@ module.exports = {
     require('postcss-nested'),
     require('postcss-extend'),
     require('postcss-mixins'),
-    require('postcss-simple-vars'
+    require('postcss-simple-vars'),
     require('autoprefixer'),
     // ...
   ]

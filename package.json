@@ -42,7 +42,8 @@
     "moment": "^2.24.0",
     "next-purgecss": "^3.1.1",
     "react-moment": "^0.9.2",
-    "react-select": "^3.0.4"
+    "react-select": "^3.0.4",
+    "url-loader": "^2.2.0"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
