@@ -1,6 +1,8 @@
 @import './Navbar';
 
 @import './SetPostsA/component/';
+@import './SetPostsB/component/';
+@import './SetPostsC/component/';
 @import './PostCard/component/';
 
 .set-posts {

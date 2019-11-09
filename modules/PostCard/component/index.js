@@ -8,8 +8,8 @@ const PostCard = (props) => {
         <img src={thumbnails.default.url} alt=''/>
       </div>
       <div className="post-card__title">
-        <b>{title}</b>
-      </div>
+          <b>{title}</b>
+        </div>
     </div>
   )
 }

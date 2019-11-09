@@ -1,0 +1,13 @@
+.set-posts-c {
+  @apply flex flex-col flex-wrap;
+  height: 400px;
+
+  .post-card {
+    flex-basis: 50%;
+
+    &:nth-child(5n+1) {
+      @apply w-1/2;
+      flex-basis: 100%;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import React from 'react';
-import SetPostsA from 'modules/SetPostsA/component';
+import { SetPostsA, SetPostsB, SetPostsC } from 'modules';
 
 function Home() {
   return <div className="right-section">
     <SetPostsA />
+    <SetPostsB />
+    <SetPostsC />
   </div>
 }
 

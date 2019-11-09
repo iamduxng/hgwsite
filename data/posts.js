@@ -13,4 +13,12 @@ const post = {
   }
 }
 
-export default (new Array(8)).fill(post);
+const setAData = (new Array(8)).fill(post);
+const setBData = (new Array(6)).fill(post);
+const setCData = (new Array(5)).fill(post);
+
+export {
+  setAData,
+  setBData,
+  setCData
+}

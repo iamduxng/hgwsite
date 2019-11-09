@@ -1,19 +1,19 @@
 import React from 'react';
 import { BlockTitle } from 'modules/shares';
-import {setAData} from 'data/posts';
+import {setCData} from 'data/posts';
 import PostCard from 'modules/PostCard/component';
 
-const SetPostsA = (props) => {
-  const classes = 'set-posts-a';
+const SetPostsC = (props) => {
+  const classes = 'set-posts-c set-posts-grid';
 
   return (
     <div className='set-posts'>
-      <BlockTitle title='Set Posts A'/>
+      <BlockTitle title='Set Posts C'/>
       <div className={classes}>
         {
-          setAData.map((post,id) => (
+          setCData.map((post,id) => (
             <PostCard
-              key={`seta-post-${id}`}
+              key={`setc-post-${id}`}
               title={post.title}
               thumbnails={post.thumbnails}
             />
@@ -24,4 +24,4 @@ const SetPostsA = (props) => {
   )
 }
 
-export default SetPostsA;
+export default SetPostsC;

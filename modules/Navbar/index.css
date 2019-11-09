@@ -1,5 +1,5 @@
 .navbar {
-  @apply fixed left-0 inset-y-0;
+  @apply fixed left-0 inset-y-0 z-10;
   @apply bg-gray-300 w-64 h-screen p-4;
   @apply flex flex-col flex-wrap;
 

@@ -7,7 +7,7 @@
   }
 
   &__thumbnail {
-    @apply overflow-hidden;
+    @apply relative overflow-hidden;
     @apply shadow-md;
 
     img {
