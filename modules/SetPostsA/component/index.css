@@ -1,0 +1,15 @@
+.set-posts-a {
+  @apply flex flex-row flex-wrap;
+
+  .post-card {
+    @apply w-1/2 p-2;
+
+    @screen md {
+      @apply w-1/3;
+    }
+
+    @screen lg {
+      @apply w-1/4;
+    }
+  }
+}

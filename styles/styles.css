@@ -1,7 +1,13 @@
 @import "tailwindcss/base";
 
+@import "./settings/global";
+
 @import "tailwindcss/components";
 
-@import '../modules/modules';
+@import "./settings/fonts";
+@import '../pages';
+@import '../modules';
 
 @import "tailwindcss/utilities";
+
+@import './shares/utilities';

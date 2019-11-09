@@ -1,0 +1,8 @@
+@import './Navbar';
+
+@import './SetPostsA/component/';
+@import './PostCard/component/';
+
+.set-posts {
+  @apply p-3;
+}

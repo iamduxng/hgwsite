@@ -1,0 +1,24 @@
+.post-card {
+  @apply cursor-pointer;
+
+  &__title {
+    @apply mt-1;
+    @apply text-2row-truncate-v1;
+  }
+
+  &__thumbnail {
+    @apply overflow-hidden;
+    @apply shadow-md;
+
+    img {
+      transition: transform ease .3s;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.5) rotate(15deg);
+      }
+    }
+  }
+}
+
